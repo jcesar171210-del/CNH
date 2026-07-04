@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+}
+
+body{
+   background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url(assets/monica-dorame-XAFhOUhl-hY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Poppins';
+  width: 100%;
+  min-height: 100vh;
+}
+
+button{
+    height: 60px;
+    width: 200PX;
+    background-color: rgba(240, 248, 255, 0.856);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    border: none;
+    backdrop-filter: blur(20px);
+    font-size: clamp(14px, 4vw, 20px);
+    color: #000;
+
+
+}
+button:hover{
+    opacity: 1;
+    box-shadow: 0 5px 10px ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    position: fixed;
+
+    z-index: 1000;
+    gap: 20px;
+    width: auto;
+
+    nav ul{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        background-color: rgba(255, 255, 255, 0.11);
+        padding: 16px 32px;
+        border-radius: 8px;
+        backdrop-filter: blur(20px);
+
+    }
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+a:hover{
+    opacity: 1;
+}
+
+    .seçao1{
+    width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+        gap: 20px;
+
+        h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(28px, 6vw, 40px);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+    }
+.divCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 4%;
+    align-items: stretch;
+    border-radius: 20px;
+    max-width: 1400px;
+
+    
+    .card{
+        width: 300px;
+        min-height: 300px;
+        background-color: rgba(255, 255, 255, 0.096);
+        padding: 16px 32px;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        img{
+            width: 80px;
+            height: auto;
+            margin-bottom: 16px;
+        }
+        
+        h3 {
+            font-size: clamp(16px, 3vw, 20px);
+        }
+        
+        h4 {
+            font-size: clamp(20px, 4vw, 24px);
+        }
+        
+        p {
+            font-size: clamp(13px, 2vw, 16px);
+        }
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5% 5%;
+    
+    h2 {
+        font-size: clamp(24px, 5vw, 36px);
+    }
+    
+    p {
+        font-size: clamp(14px, 2vw, 18px);
+    }
+}
+
+.feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 5%;
+    
+    .feedback {
+        width: 100%;
+        max-width: 300px;
+        background-color: rgba(255, 255, 255, 0.08);
+        padding: 20px;
+        border-radius: 15px;
+        backdrop-filter: blur(20px);
+        
+        h3 {
+            font-size: clamp(14px, 2vw, 18px);
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: clamp(12px, 1.5vw, 16px);
+            line-height: 1.5;
+        }
+    }
+}
+
+.perguntas{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    background-color: rgb(14, 14, 14);
+    width: auto;
+    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.336);
+}
+
+@media (max-width: 768px) {
+
+    .divCards{
+        flex-direction: column;
+    
+    }
+
+    .card{
+        width: 45vw ;
+        height: 40%;
+        min-height: 250px;
+        padding: 20px 20px;
+    }
+
+    nav{
+        max-width: 95%;
+        height: 70%;
+        font-size: 0.90rem;
+        z-index: 1000;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+    footer{
+        font-size: 0.60rem;
+    }
+
+    .footer{
+        height: 50%;
+    }
+
+    
+
+}
