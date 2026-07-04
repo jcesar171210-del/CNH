@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  background:
+   background:
     linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
     url(assets/monica-dorame-XAFhOUhl-hY-unsplash.jpg);
   background-size: cover;
@@ -23,6 +23,8 @@ body{
   background-repeat: no-repeat;
   color: white;
   font-family: 'Poppins';
+  width: 100%;
+  min-height: 100vh;
 }
 
 
@@ -79,13 +81,16 @@ header{
 
 header nav ul{
   display: flex;
-  gap: 10px;
+  gap: 50px;
   list-style-type: none;
   background-color: rgba(255, 255, 255, 0.096);
-  padding: 16px 32px;
+  padding: 25px 50px;
   border-radius: 8px;
   backdrop-filter: blur(20px);
+  font-size: 10rem;
 }
+
+
 
 a{
   color: white;
@@ -94,7 +99,7 @@ a{
   transition: all 0.3s;
   
   h4{
-    font-size: 0.80rem;
+    font-size: 1.5rem;
   }
 }
 a:hover{
@@ -215,6 +220,10 @@ main{
     color: rgba(255, 255, 255, 0.863);
   }
 
+  h3{
+    font-size: 1.6rem;
+  }
+
   video{
     max-width: 60%;
   }
@@ -279,7 +288,7 @@ main{
   }
        
       h3{
-    font-size: 3.4rem;
+    font-size: 4rem;
       }
       
       ul li{
@@ -343,27 +352,16 @@ main{
    
   }
 
-  .logo{
-
-    max-width: 40px;
-    height: auto;
+  header nav ul{
+    width: 200px;
+    padding: 10%;
+    gap: 10px;
   }
 
-  header{
-    width: 99%;
-    height: 10%;
-  }
+  a{
 
-  nav{
-    height: 20;
-    max-width: 60%;
-
-    ul{
-      padding: 8px 16px;
-    }
-    
-    a{
-      font-size: 0.60rem;
+    h4{
+      font-size: 1rem;
     }
   }
 
@@ -460,5 +458,4 @@ main{
   .footer{
     height: 10vh;
   }
-
 }
