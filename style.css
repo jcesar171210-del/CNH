@@ -225,44 +225,33 @@ main{
   }
 
   video{
-    max-width: 60%;
+    max-width: 70%;
   }
 
-
-  .card{
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 20px;
-    backdrop-filter: blur(12px);
+  .titulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    
   }
 
+  .titulo2 h2{
+    display: flex;
+    flex: 2;
+    font-size: 3.5rem;
+  }
+
+  .titulo2 p{
+    font-size: 1.5rem;
+    color: rgba(221, 221, 221, 0.927);
+  }
+
+  .video1{
+    flex: 2;
+  }
 
 }
-  .divCard{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    font-size: 0.90rem;
-    height: auto;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    
-    
-
-  }
-
-  .card{
-    display: grid;
-    gap: 2rem;
-    width: 500px;
-    padding: 32px 16px;
-  }
-
-  .branco{
-    background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 10px;  }
-
     h3{
       padding: 30px;
       font-size: 0.90rem;
